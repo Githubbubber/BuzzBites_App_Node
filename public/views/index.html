@@ -1,0 +1,60 @@
+<% include header.html %>
+	<div id="centerThis">
+	  <h5><em><b>Planning on eating somewhere special?</b></em></h5>
+	  <form action="/" method="post" >
+	    <input type="text" placeholder="Enter a neighborhood, city and/or state!" name="searchNear" id="searchNear" />     
+	    <input type="hidden" name="lat_lot" id="lat_lot" value="0" />  
+	    <button class="btn waves-effect waves-light light blue" id="searchNearSubmit" value="submit">Submit</button>
+	  </form>
+	</div>
+		
+		<br/>
+		<div id="centerThis">
+		  	<h5 id="location-title"><em>Eateries around you with Buzz</em></h5>
+			<ul id="displayData" class="collapsible" data-collapsible="accordion">
+				<%= info %>	  	
+	 		</ul>
+    	</div>
+    <br/>
+    <br/>
+
+    <div id="modal1" class="modal">
+		<div class="modal-content" id="userSignUp">
+		<br/>
+		<h4>Sign up with BuzzBites!</h4>
+		<br/>
+		<form action="/" method="get">
+		<label for="name">Name: </label>
+		<input type="text" name="name" required />
+		<br />
+		<label for="email">email: </label>
+		<input type="text" name="email" minlength="8" required />
+		<br />
+		<label for="username">username: </label>
+		<input type="text" name="username" required />
+		<br />
+		<label for="password">password: </label>
+		<input type="password" name="password" minlength="8" required />
+		<br />
+		<button class="waves-effect waves-light btn light blue">Submit</button>
+		</form>
+		</div>
+		</div>
+
+		<div id="modal2" class="modal">
+		<div class="modal-content" id="userLogin">
+		<br/>
+		<h4>Welcome back! Please log in.</h4>
+		<br/>
+		<form action="/" method="get">
+		<label for="username">username: </label>
+		<input type="text" name="username" required />
+		<br />
+		<label for="password">password: </label>
+		<input type="password" name="password" minlength="8" required />
+		<br />
+		<button class="waves-effect waves-light btn light blue">Submit</button>
+		</form>
+		</div>
+		</div>
+<% include footer.html %>

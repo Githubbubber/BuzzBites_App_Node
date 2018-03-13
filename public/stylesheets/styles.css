@@ -1,0 +1,72 @@
+
+
+input#searchNear {
+  border: 1px solid grey;
+  width: 250px;
+  height: 2em;
+  margin: auto;
+  background-color: white;
+}
+
+div#centerThis {
+  text-align: center;
+  margin: auto;
+  width: 65%;
+}
+
+div.collapsible-body {
+  text-align: left;
+  padding: 0 10%;
+}
+
+.collapsible-body img {
+  margin: 0 auto;
+  max-width: 90%;
+  height: auto;
+}
+
+.brand-logo {
+  font-weight: bold;
+}
+
+.footer-list {
+  cursor: pointer;
+}
+
+.parallax-container {
+  height: 300px;
+}
+
+footer.page-footer .footer-copyright {
+  height: 90px;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+  nav {
+    height: 96px;
+  }
+
+  #mobile-navlink li {
+    float: none;
+    display: inline;
+  }
+
+  #mobile-navlink {
+    padding-top: 40px;
+    text-align: center;
+  }
+  .parallax-container {
+    height: 150px;
+  }
+
+  div#centerThis {
+  width: 95%;
+}
+
+
+
+}
