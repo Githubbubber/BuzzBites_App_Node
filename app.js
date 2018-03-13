@@ -2,7 +2,8 @@
 
 const jsdom = require("jsdom"); const dom = new jsdom.JSDOM(`<!DOCTYPE html>`); var $ = require("jquery")(dom.window);
 
-var passkeys = require("./passkeys");	// var passkeys = "";  // Comment out for local testing
+// var passkeys = require("./passkeys");	// Comment out for Heroku testing
+var passkeys = "";  // Comment out for local testing
 var express = require('express'), app = module.exports = express(), bodyParser = require('body-parser');
 
 var mapsapi = (passkeys.MAPSAPI)? passkeys.MAPSAPI : process.env.MAPSAPI;
