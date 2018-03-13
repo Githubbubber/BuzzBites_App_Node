@@ -42,6 +42,7 @@ app.use(express.static(__dirname + '/public/'));
 app.set('views', __dirname + '/public/views');
 app.set('view engine', 'html'); 					// This avoids having to provide the extension to res.render()
 app.use(function(req, res, next) { console.log(`${req.method} request for ${req.url}`); next(); });
+app.use(favicon(path.join(__dirname, 'public/images', 'favicon.ico')))
 
 // The permanent code
 var doStuff = function(data) {
